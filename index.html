@@ -1,0 +1,22 @@
+<html>
+<head>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+</head>
+<body>
+
+<div id="app">
+    <span v-once>这个将不会改变: {{ message }}</span>
+    <input v-model="message" />
+</div>
+
+<script type="text/javascript">
+    new Vue({
+        el:'#app',
+        data:{
+            message: "hello world"
+        },
+    });
+</script>
+</body>
+</html>
